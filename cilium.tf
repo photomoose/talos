@@ -47,4 +47,12 @@ data "helm_template" "cilium" {
     name  = "l2announcements.enabled"
     value = "true"
   }
+  set {
+    name  = "hubble.ui.enabled"
+    value = "true"
+  }
+  set {
+    name  = "hubble.relay.enabled"
+    value = "true"
+  }
 }
