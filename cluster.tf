@@ -95,7 +95,7 @@ resource "talos_machine_configuration_apply" "cp_config_apply" {
             contents = data.helm_template.cilium.manifest
           },
           {
-            name     = "proxmox-csi-pliugin"
+            name     = "proxmox-csi-plugin"
             contents = data.helm_template.proxmox_csi_plugin.manifest
           }
         ]
